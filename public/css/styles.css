@@ -1,0 +1,107 @@
+@media screen and (max-width: 1024px) {
+  .nav {
+    background: #726b62;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear, left top, left bottom, from(#726b62), to(#030303));
+    background: linear-gradient(#726b62, #030303);
+    /* Standard syntax */
+    border-bottom: 3px solid #e29a3b;
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    /*
+  .icon {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    border: 1px solid blue;
+  }
+
+  .icon > a > img {
+    border: 1px solid purple;
+  }
+  */ }
+    .nav a > img {
+      position: relative;
+      border: 1px solid purple;
+      border-style: hidden;
+      margin: 0;
+      top: 1.5em;
+      left: 1.5em;
+      margin-bottom: -2em; }
+    .nav .nav-item > a {
+      display: block;
+      line-height: 2em;
+      text-decoration: none;
+      padding: 0.3em 0.1em;
+      border: 1px solid yellow;
+      border-style: hidden;
+      color: #f7e8d5;
+      font-size: 1.1em;
+      position: relative; }
+    .nav .nav-item {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      float: right;
+      padding-right: 0.7em; }
+    .nav .nav-list {
+      padding-right: 0em; }
+    .nav .sub-list {
+      padding-top: 1em;
+      margin-bottom: 0; }
+    .nav .nav-list, .nav .sub-list {
+      border: 1px solid white;
+      border-style: hidden; }
+    .nav .nav-item, .nav .sub-item {
+      display: inline-block;
+      list-style-type: none;
+      border: 1px solid red;
+      border-style: hidden; }
+    .nav .sub-item > a {
+      display: inline-block;
+      line-height: 2em;
+      padding: 0em 0.3em;
+      text-decoration: none;
+      color: #f7e8d5;
+      font-size: 0.875em; }
+    .nav a {
+      font-family: "Lato", sans-serif; }
+    .nav a:hover {
+      color: #eb901b; }
+    .nav .nav-item > a:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #eb901b;
+      visibility: hidden;
+      -webkit-transform: scaleX(0);
+      transform: scaleX(0);
+      -webkit-transition: all 0.3s ease-in-out 0s;
+      transition: all 0.3s ease-in-out 0s; }
+    .nav .nav-item a:hover:before {
+      visibility: visible;
+      -webkit-transform: scaleX(1);
+      transform: scaleX(1); } }
+
+@media screen and (max-width: 889px) {
+  .nav {
+    background: #726b62;
+    /* For browsers that do not support gradients */
+    /* For Safari 5.1 to 6.0 */
+    /* For Opera 11.1 to 12.0 */
+    /* For Firefox 3.6 to 15 */
+    background: -webkit-gradient(linear, left top, left bottom, from(#726b62), to(#030303));
+    background: linear-gradient(#726b62, #030303);
+    /* Standard syntax */ }
+    .nav .nav-list, .nav .sub-list {
+      display: block; } }
+
+body {
+  background: #000; }
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Njc3Mvc3R5bGVzLnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBV0E7RUFFQTtJQUVJLG9CQVpjO0lBWVMsZ0RBQWdEO0lBQ1AsMkJBQTJCO0lBQ2hDLDRCQUE0QjtJQUMxQiwyQkFBMkI7SUFDeEYsd0ZBQXNEO0lBQXRELDhDQUFzRDtJQUFFLHFCQUFxQjtJQUkvRSxpQ0F0Qm9CO0lBd0JwQixtQkFBaUI7SUFDakIsVUFBUztJQUNULGlCQUFnQjtJQUNsQjs7Ozs7Ozs7Ozs7SUFXSSxFQWtHSDtJQTVIRDtNQTZCSSxtQkFBa0I7TUFDbEIseUJBQXdCO01BQ3hCLHFCQXBDYTtNQXFDYixVQUFTO01BQ1QsV0FBVTtNQUNWLFlBQVc7TUFDWCxvQkFBbUIsRUFDcEI7SUFwQ0g7TUF1Q0ksZUFBYztNQUNkLGlCQUFnQjtNQUNoQixzQkFBcUI7TUFDckIscUJBQW9CO01BQ3BCLHlCQUF3QjtNQUN4QixxQkFqRGE7TUFrRGIsZUF4RGdCO01BeURoQixpQkFBZ0I7TUFDaEIsbUJBQWtCLEVBQ25CO0lBaERIO01BdURFLGdCQUFlO01BQ2Ysb0JBQW1CO01BQ25CLGFBQVk7TUFDWixxQkFBb0IsRUFDckI7SUEzREQ7TUE4REksbUJBQWtCLEVBQ3JCO0lBL0REO01Ba0VFLGlCQUFnQjtNQUNoQixpQkFBZ0IsRUFDakI7SUFwRUQ7TUF1RUUsd0JBQXVCO01BQ3ZCLHFCQTdFZSxFQStFaEI7SUExRUQ7TUE4RUUsc0JBQXFCO01BQ3JCLHNCQUFxQjtNQUNyQixzQkFBcUI7TUFDckIscUJBdEZlLEVBdUZoQjtJQWxGRDtNQXNGRSxzQkFBcUI7TUFDckIsaUJBQWdCO01BQ2hCLG1CQUFrQjtNQUNsQixzQkFBcUI7TUFDckIsZUFyR2tCO01Bc0dsQixtQkFBa0IsRUFDbkI7SUE1RkQ7TUErRkUsZ0NBdEd1QixFQXVHeEI7SUFoR0Q7TUFtR0UsZUFoSHFCLEVBa0h0QjtJQXJHRDtNQXdHRSxZQUFXO01BQ1gsbUJBQWtCO01BQ2xCLFlBQVc7TUFDWCxZQUFXO01BQ1gsVUFBUztNQUNULFFBQU87TUFDUCwwQkEzSHFCO01BNEhyQixtQkFBa0I7TUFDbEIsNkJBQTRCO01BQzVCLHFCQUFvQjtNQUNwQiw0Q0FBMkM7TUFDM0Msb0NBQW1DLEVBQ3BDO0lBcEhEO01BdUhFLG9CQUFtQjtNQUNuQiw2QkFBNEI7TUFDNUIscUJBQW9CLEVBQ3JCLEVBQUE7O0FBYUQ7RUFFRTtJQUNFLG9CQXBKYztJQW9KUyxnREFBZ0Q7SUFDUCwyQkFBMkI7SUFDaEMsNEJBQTRCO0lBQzFCLDJCQUEyQjtJQUN4Rix3RkFBc0Q7SUFBdEQsOENBQXNEO0lBQUUscUJBQXFCLEVBUzlFO0lBZEQ7TUFXSSxlQUFjLEVBQ2YsRUFBQTs7QUFNTDtFQUNFLGlCQUFnQixFQUNqQiIsImZpbGUiOiJzdHlsZXMuY3NzIn0= */

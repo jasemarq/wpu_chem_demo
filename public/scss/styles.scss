@@ -1,0 +1,171 @@
+$primary-color: #eb901b; // Logo, Headers, etc.
+$accent-color: #e29a3b; // Line Breaks, Separations, etc.
+$text-color: #f7e8d5; // Text Color (Headers, Body, etc)
+$bg-color: #726b62; // Background
+$bg-color-init: #030303; // Dark BG Color
+$hover-color: #f3b482;
+$font: 'Lato', sans-serif;
+
+$border-v: hidden; // visible to hide borders
+
+// Desktop
+@media screen and (max-width: 1024px) {
+
+.nav {
+
+    background: $bg-color; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($bg-color, $bg-color-init); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($bg-color, $bg-color-init); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($bg-color, $bg-color-init); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($bg-color, $bg-color-init); /* Standard syntax */
+
+//  border: 3px solid green;
+//  border-style: $border-v;
+  border-bottom: 3px solid $accent-color;
+
+  position:relative;
+  margin: 0;
+  overflow: hidden;
+/*
+  .icon {
+    width: 100%;
+    height: auto;
+    margin-bottom: 0;
+    border: 1px solid blue;
+  }
+
+  .icon > a > img {
+    border: 1px solid purple;
+  }
+  */
+
+  a > img {
+    position: relative;
+    border: 1px solid purple;
+    border-style: $border-v;
+    margin: 0;
+    top: 1.5em;
+    left: 1.5em;
+    margin-bottom: -2em;
+  }
+
+  .nav-item > a {
+    display: block;
+    line-height: 2em;
+    text-decoration: none;
+    padding: 0.3em 0.1em;
+    border: 1px solid yellow;
+    border-style: $border-v;
+    color:$text-color;
+    font-size: 1.1em;
+    position: relative;
+  }
+
+  .nav-item >a:first-child {
+  //  padding-right: 1em;
+  }
+
+.nav-item {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  float: right;
+  padding-right: 0.7em;
+}
+
+.nav-list {
+    padding-right: 0em;
+}
+
+.sub-list {
+  padding-top: 1em;
+  margin-bottom: 0;
+}
+
+.nav-list, .sub-list {
+  border: 1px solid white;
+  border-style: $border-v;
+
+}
+
+
+.nav-item, .sub-item {
+  display: inline-block;
+  list-style-type: none;
+  border: 1px solid red;
+  border-style: $border-v;
+}
+
+
+.sub-item > a {
+  display: inline-block;
+  line-height: 2em;
+  padding: 0em 0.3em;
+  text-decoration: none;
+  color:$text-color;
+  font-size: 0.875em;
+}
+
+a {
+  font-family: $font;
+}
+
+a:hover {
+  color: $primary-color;
+
+}
+
+.nav-item > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: $primary-color;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+}
+}
+
+// CAROUSEL
+
+
+
+// END CAROUSEL
+
+
+// Mobile & Tablet
+@media screen and (max-width: 889px) {
+
+  .nav {
+    background: $bg-color; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient($bg-color, $bg-color-init); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient($bg-color, $bg-color-init); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient($bg-color, $bg-color-init); /* For Firefox 3.6 to 15 */
+    background: linear-gradient($bg-color, $bg-color-init); /* Standard syntax */
+
+
+  //  background: #fff;
+
+    .nav-list, .sub-list {
+      display: block;
+    }
+
+  }
+
+}
+
+body {
+  background: #000;
+}

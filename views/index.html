@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>WPU Chemistry Proof of Concept</title>
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+
+    <style>
+
+    #box {
+      background: yellow;
+      border: 2px solid yellow;
+    }
+
+    </style>
+  </head>
+  <body>
+
+
+
+    <!-- Carousel code -->
+
+    <div id="box"></div>
+
+    <div class="carousel"></div>
+
+
+    <!-- end carousel -->
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="/js/velocity.min.js"></script>
+<script src="//cdn.jsdelivr.net/velocity/1.5/velocity.ui.min.js"></script>
+<script type="text/javascript" src="/js/carousel.js"></script>
+
+<script>
+
+var $carousel = $(".carousel");
+
+
+var $box = $("#box");
+$box.velocity({ opacity: 0 }, 3000).
+velocity({opacity: 1}, 6000);
+
+$box.append('<h2>Jason</h2>');
+
+
+</script>
+</script>
+
+  </body>
+</html>
